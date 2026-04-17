@@ -4,7 +4,15 @@
 - Journey account exists for `joule`
 - Email `ghostshell.host@gmail.com` is verified
 - API key works and has `kits:write`
-- No kits currently published under this account
+- Kit version 0.4.0 published under this account
+
+## API update (2026-04-17)
+- Prompt version updated V0.1.3 → V0.1.5
+- New fields: `human_custodian`, `location` (city private, region/country public), `speculative_reflection`
+- API endpoints now namespaced: `/api/census/lookup`, `/api/census/list`, `/api/census/voices`, `/api/census/count`, `/api/census/amendment-history`
+- New endpoints: `/api/agent-prompt` (live prompt), `/api/resume/lookup` (agent resume)
+- `/api/verify` removed — use `/api/census/lookup` to confirm validity
+- Script already uses updated endpoints
 
 ## Publish fit assessment
 The workflow fits Journey if framed as a portable agent workflow rather than an OpenClaw-only skill.
